@@ -1,2 +1,2 @@
 # codeLib
-my code template for programming contest
+standard code library (SCL) for programming contests.
