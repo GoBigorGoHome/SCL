@@ -19,7 +19,7 @@ int mono_que(int n, int k){
     int _max = INT_MIN;
     for(int i = 0; i < n; i++){
         int x = get(i); // get(i) 返回第 i 个元素，依问题而定
-        while(que.size() && que.back().second <= x){
+        while(que.size() && que.back().second >= x){    // 队列中元素严格递增
             que.pop_back();
         }
         que.push_back({i, x});
